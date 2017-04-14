@@ -5,45 +5,102 @@
     <description>공부 정리</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 15 Apr 2017 02:04:35 +0900</pubDate>
-    <lastBuildDate>Sat, 15 Apr 2017 02:04:35 +0900</lastBuildDate>
+    <pubDate>Sat, 15 Apr 2017 02:54:18 +0900</pubDate>
+    <lastBuildDate>Sat, 15 Apr 2017 02:54:18 +0900</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
-        <title>How to Download or Use This Theme</title>
-        <description>&lt;h3 id=&quot;use-this-theme-as-you-main-site&quot;&gt;Use this theme as you main site&lt;/h3&gt;
+        <title>Linear Algebra#1</title>
+        <description>&lt;script type=&quot;text/javascript&quot; src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;linear-equation&quot;&gt;Linear Equation&lt;/h2&gt;
+&lt;h3 id=&quot;definition&quot;&gt;Definition&lt;/h3&gt;
+&lt;p&gt;A linear equation is an equation that can be written in the form 
+&lt;script type=&quot;math/tex&quot;&gt;a_1 x_1 + a_2x_2+ ... + a_nx_n= b&lt;/script&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Download or fork the master branch of this theme repo into your GitHub account.&lt;/li&gt;
-  &lt;li&gt;Rename the repo into something like &lt;code class=&quot;highlighter-rouge&quot;&gt;your_username.github.io&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Edit &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file to your preferences.&lt;/li&gt;
-  &lt;li&gt;Edit &lt;code class=&quot;highlighter-rouge&quot;&gt;about.md&lt;/code&gt; file for your About page.&lt;/li&gt;
-  &lt;li&gt;Inside &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; folder, there are sample of blog entries. Learn from it and start yours.&lt;/li&gt;
-  &lt;li&gt;Now, visit &lt;code class=&quot;highlighter-rouge&quot;&gt;http://your_username.github.io&lt;/code&gt; and you should see your blog running.&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;x_1, ... x_n&lt;/script&gt; are called the variables.&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;a_a, ... a_n&lt;/script&gt; are called the coefficient.&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt; is the right hand side constant.&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt; can be any positive integer.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;use-this-theme-as-a-project-page&quot;&gt;Use this theme as a project page&lt;/h3&gt;
+&lt;h2 id=&quot;solution-set&quot;&gt;Solution Set&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;we have 3 differents types of solution sets&lt;/li&gt;
+  &lt;li&gt;A system of linear equations has either
+    &lt;ul&gt;
+      &lt;li&gt;No solution -&amp;gt; System is Inconsistent&lt;/li&gt;
+      &lt;li&gt;Exactely on solution -&amp;gt; System is Consistent&lt;/li&gt;
+      &lt;li&gt;Infinitely many solution -&amp;gt; System is Consistent&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;If you want to use this theme as a project page blog, you don’t need to rename the theme repo into &lt;code class=&quot;highlighter-rouge&quot;&gt;your_username.github.io&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;elementary-row-operations&quot;&gt;Elementary Row Operations&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;When solving linear system, we will use these Elementary Row Operations
+    &lt;ul&gt;
+      &lt;li&gt;Replacement : Replace one row by the swan of itself and a multiple of another row&lt;/li&gt;
+      &lt;li&gt;Interchange : Interchange two rows.&lt;/li&gt;
+      &lt;li&gt;Scale : Multiply all entries in a row by a nonzero constant&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;All you need to do, open &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file, change &lt;code class=&quot;highlighter-rouge&quot;&gt;baseurl&lt;/code&gt; to your project name which contains this theme, e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;baseurl: &quot;/myproject&quot;&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;echelon-form&quot;&gt;Echelon form&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;A matrix is in echelon form if it satisfies the following 3 conditions
+    &lt;ol&gt;
+      &lt;li&gt;All nonzero rows are above all zero rows.&lt;/li&gt;
+      &lt;li&gt;The leading entry of nonzero rows is to the right of the leading entry of any row above it.&lt;/li&gt;
+      &lt;li&gt;All entries in a column below a leading entry are zeros.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h4 id=&quot;cheers&quot;&gt;Cheers!&lt;/h4&gt;
+&lt;h2 id=&quot;reduced-row-echelon-form&quot;&gt;Reduced Row Echelon form&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;A matrix is in reduced row echelon form if it satisfies the 3 echelon form conditions are 2 more conditions
+    &lt;ol&gt;
+      &lt;li&gt;All leading entries are 1&lt;/li&gt;
+      &lt;li&gt;Each leading 1 is the only nonzero entry in its column&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;pivot-positions-and-columns&quot;&gt;Pivot Positions and Columns&lt;/h2&gt;
+&lt;h3 id=&quot;definition-1&quot;&gt;Definition&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;A pivot position is a location that corresponds to a leading entry in an EF&lt;/li&gt;
+  &lt;li&gt;A pivot column is a column that contains a pivot position.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;basic-and-free-variables&quot;&gt;Basic and Free Variables&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Base variable : The Variables corresponding to leading entries position in RREF&lt;/li&gt;
+  &lt;li&gt;Free variables : Other variables&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;row-reduction-algorithm&quot;&gt;Row reduction algorithm&lt;/h2&gt;
+
+&lt;p&gt;Step 1 : Begin with the leftmost nonzero column. The pivot position is at the top.
+Step 2 : If necessary, interchange rows to move a nonzero entry into the pivot position.
+Step 3 : Create zeros in all positions below the pivot.
+Step 4 : Apply step 1-3 to the remaining submatrix.
+Step 5 : Beginning with the rightmost pivot and working up/left, make each pivot and create zero above each pivot.&lt;/p&gt;
+
+&lt;h2 id=&quot;linear-combination&quot;&gt;Linear Combination&lt;/h2&gt;
+&lt;h3 id=&quot;definition-2&quot;&gt;Definition&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;The vector &lt;script type=&quot;math/tex&quot;&gt;\vec u&lt;/script&gt; &lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\vec u = c_1 \vec v_1+ c_2 \vec v_2 + ... + c_n \vec v_n&lt;/script&gt; &lt;br /&gt;
+is called a linear combination fo &lt;script type=&quot;math/tex&quot;&gt;\vec v_1, \vec v_2, ... , \vec v_k&lt;/script&gt; is coefficients &lt;script type=&quot;math/tex&quot;&gt;c_1,c_2,...,c_k&lt;/script&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
-        <pubDate>Fri, 10 Jun 2016 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2016/how-to-download-or-use-this-theme/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/how-to-download-or-use-this-theme/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>If you have a Guest post..</title>
-        <description>&lt;p&gt;If you think that you’re going to have a guest post… take a look on this post sample. Just add &lt;code class=&quot;highlighter-rouge&quot;&gt;author: GuestName&lt;/code&gt; to the YAML front matter. Then, the &lt;strong&gt;GuestName&lt;/strong&gt; will be appear on the next of post date. Oh, the guest name will be automatically uppercase.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 09 Jun 2016 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2016/if-you-have-a-guest-post/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/if-you-have-a-guest-post/</guid>
+        <pubDate>Sat, 15 Apr 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2017/Linear-Algebra-1/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/Linear-Algebra-1/</guid>
         
         
       </item>
@@ -241,66 +298,6 @@ But let's throw in a &amp;lt;b&amp;gt;tag&amp;lt;/b&amp;gt;.
         <pubDate>Wed, 30 Dec 2015 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2015/markdown-cheatsheet-demo/</link>
         <guid isPermaLink="true">http://localhost:4000/2015/markdown-cheatsheet-demo/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>The quick, brown fox jumps over a lazy dog</title>
-        <description>&lt;p&gt;The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! “Now fax quiz Jack! “ my brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. zaps Iraq. Cozy sphinx waves quart jug of bad milk.&lt;/p&gt;
-
-&lt;p&gt;A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Joaquin Phoenix was gazed by MTV for luck. A wizard’s job is to vex chumps quickly in fog. Watch “Jeopardy! “, Alex Trebek’s fun TV quiz game. Woven silk pyjamas exchanged for blue quartz. Brawny gods just flocked up to quiz and vex him.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Adjusting quiver and bow, Zompyc[1] killed the fox. My faxed joke won a pager in the cable TV quiz show. Amazingly few discotheques provide jukeboxes. My girl wove six dozen plaid jackets before she quit. Six big devils from Japan quickly forgot how to waltz.&lt;/p&gt;
-
-&lt;p&gt;Big July earthquakes confound zany experimental vow. Foxy parsons quiz and cajole the lovably dim wiki-girl. Have a pick: twenty six letters - no forcing a jumbled quiz! Crazy Fredericka bought many very exquisite opal jewels.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;Sixty zippers were quickly picked from the woven jute bag. A quick movement of the enemy will jeopardize six gunboats. All questions asked by five watch experts amazed the judge. Jack quietly moved up front and seized the big ball of wax.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox.&lt;/p&gt;
-
-&lt;p&gt;Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs!&lt;/p&gt;
-
-&lt;p&gt;“Now fax quiz Jack! “ my brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. zaps Iraq. Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV&lt;/p&gt;
-</description>
-        <pubDate>Mon, 12 Oct 2015 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2015/the-quick-brown-fox-jumps-over-a-lazy-dog/</link>
-        <guid isPermaLink="true">http://localhost:4000/2015/the-quick-brown-fox-jumps-over-a-lazy-dog/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>What is Lorem Ipsum?</title>
-        <description>&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
-
-&lt;h3 id=&quot;where-does-it-come-from&quot;&gt;Where does it come from?&lt;/h3&gt;
-
-&lt;p&gt;Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..”, comes from a line in section 1.10.32.&lt;/p&gt;
-
-&lt;p&gt;The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from “de Finibus Bonorum et Malorum” by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.&lt;/p&gt;
-
-&lt;h3 id=&quot;why-do-we-use-it&quot;&gt;Why do we use it?&lt;/h3&gt;
-
-&lt;p&gt;It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).&lt;/p&gt;
-
-&lt;h3 id=&quot;where-can-i-get-some&quot;&gt;Where can I get some?&lt;/h3&gt;
-
-&lt;p&gt;There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;This content was copied from http://www.lipsum.com/ as an example of post article.&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Fri, 20 Mar 2015 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2015/what-is-lorem-ipsum/</link>
-        <guid isPermaLink="true">http://localhost:4000/2015/what-is-lorem-ipsum/</guid>
         
         
       </item>
