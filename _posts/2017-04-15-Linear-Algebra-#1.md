@@ -55,11 +55,11 @@ $$a_1 x_1 + a_2x_2+ ... + a_nx_n= b$$
 
 ## Row reduction algorithm
 
-Step 1 : Begin with the leftmost nonzero column. The pivot position is at the top.
-Step 2 : If necessary, interchange rows to move a nonzero entry into the pivot position.
-Step 3 : Create zeros in all positions below the pivot.
-Step 4 : Apply step 1-3 to the remaining submatrix.
-Step 5 : Beginning with the rightmost pivot and working up/left, make each pivot and create zero above each pivot.
+Step 1 : Begin with the leftmost nonzero column. The pivot position is at the top.<br>
+Step 2 : If necessary, interchange rows to move a nonzero entry into the pivot position.<br>
+Step 3 : Create zeros in all positions below the pivot.<br>
+Step 4 : Apply step 1-3 to the remaining submatrix.<br>
+Step 5 : Beginning with the rightmost pivot and working up/left, make each pivot and create zero above each pivot.<br>
 
 ## Linear Combination
 ### Definition
