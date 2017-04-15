@@ -4,11 +4,12 @@ title: "Linear Algebra#1"
 comments: true
 description: "1st"
 keywords: "math, linear_algebra"
-
+tags : 
+- linear_algebra
+- math
 
 ---
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 ## Linear Equation
 ### Definition
 A linear equation is an equation that can be written in the form 
@@ -66,3 +67,44 @@ Step 5 : Beginning with the rightmost pivot and working up/left, make each pivot
 - The vector $$\vec u$$ <br>
   $$\vec u = c_1 \vec v_1+ c_2 \vec v_2 + ... + c_n \vec v_n $$ <br>
   is called a linear combination fo $$\vec v_1, \vec v_2, ... , \vec v_k $$ is coefficients $$c_1,c_2,...,c_k$$
+  
+## Span
+### Definition 
+- span { $$\vec v_1, ... , \vec v_2 $$ } is the set of all vectors that can be written as<br>
+                             $$ c_1 \vec v_1 + c_2 \vec v_2 + ... + c_k \vec v_k $$
+for some scalas $$ c_1, c_2, ... , c_k $$
+
+## Existence of solutions
+### Theorem
+- The following statements are equivalent.
+  - The matrix equation $$ A \vec v = \vec b $$ has a solution
+  - The vector equation $$ x_1 \vec a_1 + ... x_n \vec a_n = \vec b $$ has a solution
+  - $$ \vec b $$ is a linear comination of $$ \vec a_1 , \vec a_2 , ... , \vec a_n $$
+  - $$ \vec b $$ is in Span{$$\vec a_1 , \vec a_2 , ... , \vec a_n $$}
+  - The Linear System with augmented matrix \{ $$ a_1 , a_2 , ... , a_n $$ \| $$ \vec b_n $$ \} = { $$ A $$\| $$ \vec b$$ } has a solution
+
+## Homogeneous System
+### Definition
+- A Linear System is homogeneous if it can be written in the form $$A \vec x = \vec b$$
+- A homogeneous system always has the solution $$ \vec x = 0 $$, called the trivial solution
+- A nontrivial solution is a solution $$ \vec x \ne \vec 0 $$
+
+### Theorem
+- THe homogeneous equation $$A \vec x = \vec 0 $$ has a nontrivial solution iff it has at least one free variable.
+
+## Nonhomogeneous System
+### Theorem
+- If $$ A \vec x = \vec b $$, the solution set of nonhomogeneous sytem is the set of all vectors of the form<br>
+$$\vec w = \vec p + \vec v_h $$
+where $$\vec v_h$$ is any solution of the corresponding homogeneous system $$ A \vec x = \vec 0 $$
+
+### Notation 
+- In the above , $$ \vec p $$ is called a particular solution
+
+## Vector Equation of a Line
+### Procedure
+- To find the vector equation of a line
+  - Find a vector $$\vec v$$ parallel to the line
+  - Find a point $$\vec p$$ on the line
+  - The vector equation is then.
+ $$\vec p + t \vec v, t \in R $$
