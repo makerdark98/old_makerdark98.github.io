@@ -108,3 +108,40 @@ where $$\vec v_h$$ is any solution of the corresponding homogeneous system $$ A 
   - Find a point $$\vec p$$ on the line
   - The vector equation is then.
  $$\vec p + t \vec v, t \in R $$
+ 
+## Linear Dependence
+### Definition
+- Consider a list of vectors $$ \vec v_1, ... , \vec v_n$$ in $$ R^n $$ and the equation
+  $$x_1\vec v_1 + x_2\vec v_2 + ... + x_p\vec v_p = \vec 0 $$
+  - If this equation has only the trivial solution, the list of vectors is linearly independent.
+  - If this equation has a nontrivial solution, the list of vectors is linearly dependent.
+- The list of vectors is linearly dependent if there exist some scalas $$ c_1, ... , c_p $$ not all zero, such that
+
+$$c_1\vec v_1 + c_2\vec v_2 + ... + c_p\vec v_p = \vec 0 $$
+- This is called a linear dependence relation.
+
+
+## Solving problems about linear dependence/independence
+- So if you're given a list of vectors
+$$ \vec v_1, \vec v_2, ... , \vec v_p $$
+
+and you want to know if they're linearly dependent or independent,
+  - Form the matrix $$ A  = $$ [ $$ \vec v_1 $$ $$ \vec v_2 $$ ... $$\vec v_p $$ ] 
+  - Row reduce [ $$ A $$ \| $$ \vec 0 $$ ] 
+    - If there are free variables, -> nontrivial sol. -> the vectors ar dependent
+    - If there are no free variables, -> trivial sol. -> the vectors are independent.
+
+### Linear independence of a two vector set
+$$ x_1 \vec v_1 + x_2 \vec v_2 = \vec 0 $$
+- Two vectors is linearly dependent iff at liseas one of the vectors is a multiple of the other.
+
+## Characterization of linearly independent sets
+### Theorem
+- A list $$ \vec v_1, \vec v_2, ... \vec v_p $$ of two or more vectors is linearly dependent iff at least one of the vectors in the list is a linear combination of the others.
+
+## Theorem : $$ p > n $$
+- If $$ \vec v_1, \vec v_2, ... , \vec v_p $$ is a liest of vectors in $$ R^n $$, and $$ p > n $$ then the set is linearly dependent.
+
+## Zero Vector
+### Theorem
+- If a list of vectors contains the zero vector, the vectors are linearly dependent.

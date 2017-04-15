@@ -5,9 +5,71 @@
     <description>공부 정리</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 15 Apr 2017 15:26:36 +0900</pubDate>
-    <lastBuildDate>Sat, 15 Apr 2017 15:26:36 +0900</lastBuildDate>
+    <pubDate>Sat, 15 Apr 2017 23:19:20 +0900</pubDate>
+    <lastBuildDate>Sat, 15 Apr 2017 23:19:20 +0900</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>Linear Algebra#2</title>
+        <description>&lt;h2 id=&quot;matrix-transformations&quot;&gt;Matrix Transformations&lt;/h2&gt;
+&lt;h3 id=&quot;another-way-to-view-a-vec-x--b&quot;&gt;Another Way to View &lt;script type=&quot;math/tex&quot;&gt;A \vec x = b&lt;/script&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Matrix &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt; is a way to produce a new vector &lt;script type=&quot;math/tex&quot;&gt;\vec b&lt;/script&gt; from &lt;script type=&quot;math/tex&quot;&gt;\vec x&lt;/script&gt; by multiplication.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;definition&quot;&gt;Definition&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;A transformation &lt;script type=&quot;math/tex&quot;&gt;T&lt;/script&gt; from &lt;script type=&quot;math/tex&quot;&gt;R^n&lt;/script&gt; to &lt;script type=&quot;math/tex&quot;&gt;R^m&lt;/script&gt; is a rul that assigns to each vector &lt;script type=&quot;math/tex&quot;&gt;\vec x&lt;/script&gt; in &lt;script type=&quot;math/tex&quot;&gt;R^n&lt;/script&gt; a vector &lt;script type=&quot;math/tex&quot;&gt;T(x) in R^m&lt;/script&gt;.
+    &lt;h3 id=&quot;terminology&quot;&gt;Terminology&lt;/h3&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;R^n&lt;/script&gt; : domatin of &lt;script type=&quot;math/tex&quot;&gt;T&lt;/script&gt; , &lt;script type=&quot;math/tex&quot;&gt;R^m&lt;/script&gt; : codomain of &lt;script type=&quot;math/tex&quot;&gt;T&lt;/script&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;T(x)&lt;/script&gt; in &lt;script type=&quot;math/tex&quot;&gt;R^m&lt;/script&gt; is the image of &lt;script type=&quot;math/tex&quot;&gt;x&lt;/script&gt; under the transformation &lt;script type=&quot;math/tex&quot;&gt;T&lt;/script&gt;.&lt;/li&gt;
+  &lt;li&gt;Set of all images &lt;script type=&quot;math/tex&quot;&gt;T(x)&lt;/script&gt; is the range of &lt;script type=&quot;math/tex&quot;&gt;T&lt;/script&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;linear-transformations&quot;&gt;Linear Transformations&lt;/h1&gt;
+&lt;h3 id=&quot;definition-1&quot;&gt;Definition&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;A transformation T is linear if :
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;T(0) = 0&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;T(u + v)  = T(y) + T(v)&lt;/script&gt; for all &lt;script type=&quot;math/tex&quot;&gt;u,&lt;/script&gt; in the domain of &lt;script type=&quot;math/tex&quot;&gt;T&lt;/script&gt;.&lt;/li&gt;
+      &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;T(cu) = cT(u)&lt;/script&gt; for all &lt;script type=&quot;math/tex&quot;&gt;u&lt;/script&gt; in the domain of &lt;script type=&quot;math/tex&quot;&gt;T&lt;/script&gt; and all scalars &lt;script type=&quot;math/tex&quot;&gt;c&lt;/script&gt;.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;identity-matrix&quot;&gt;Identity Matrix&lt;/h2&gt;
+&lt;h3 id=&quot;definition-2&quot;&gt;Definition&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;I_n&lt;/script&gt; is &lt;script type=&quot;math/tex&quot;&gt;m \times n&lt;/script&gt; matrix with 1’s on the main diagonal and 0’s elsewhere. The &lt;script type=&quot;math/tex&quot;&gt;i^{th}&lt;/script&gt; column of &lt;script type=&quot;math/tex&quot;&gt;I_n&lt;/script&gt; is labeled &lt;script type=&quot;math/tex&quot;&gt;e_i&lt;/script&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;linear-transformation&quot;&gt;Linear Transformation&lt;/h2&gt;
+&lt;h3 id=&quot;theorem&quot;&gt;Theorem&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Let &lt;script type=&quot;math/tex&quot;&gt;T : R^n -&gt; R^m&lt;/script&gt; be a linear transformation.&lt;/li&gt;
+  &lt;li&gt;Then there exists a unique matrix A such that
+&lt;script type=&quot;math/tex&quot;&gt;T(x) = Ax&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;A is the &lt;script type=&quot;math/tex&quot;&gt;m \times n&lt;/script&gt; matrix whoes &lt;script type=&quot;math/tex&quot;&gt;j^{th}&lt;/script&gt; column is the vector &lt;script type=&quot;math/tex&quot;&gt;T(e_j)&lt;/script&gt;, where &lt;script type=&quot;math/tex&quot;&gt;e_j&lt;/script&gt; is the &lt;script type=&quot;math/tex&quot;&gt;j^{th}&lt;/script&gt; column of the identity matrix in &lt;script type=&quot;math/tex&quot;&gt;R^n&lt;/script&gt;
+&lt;script type=&quot;math/tex&quot;&gt;A = [ T(e_1)&lt;/script&gt; &lt;script type=&quot;math/tex&quot;&gt;T(e_2)&lt;/script&gt; … &lt;script type=&quot;math/tex&quot;&gt;T(e_n)&lt;/script&gt; ]&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 15 Apr 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2017/Linear-Algebra-2/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/Linear-Algebra-2/</guid>
+        
+        <category>linear_algebra</category>
+        
+        <category>math</category>
+        
+        
+      </item>
     
       <item>
         <title>Linear Algebra#1</title>
@@ -155,6 +217,64 @@ where &lt;script type=&quot;math/tex&quot;&gt;\vec v_h&lt;/script&gt; is any sol
  &lt;script type=&quot;math/tex&quot;&gt;\vec p + t \vec v, t \in R&lt;/script&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;linear-dependence&quot;&gt;Linear Dependence&lt;/h2&gt;
+&lt;h3 id=&quot;definition-5&quot;&gt;Definition&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Consider a list of vectors &lt;script type=&quot;math/tex&quot;&gt;\vec v_1, ... , \vec v_n&lt;/script&gt; in &lt;script type=&quot;math/tex&quot;&gt;R^n&lt;/script&gt; and the equation
+&lt;script type=&quot;math/tex&quot;&gt;x_1\vec v_1 + x_2\vec v_2 + ... + x_p\vec v_p = \vec 0&lt;/script&gt;
+    &lt;ul&gt;
+      &lt;li&gt;If this equation has only the trivial solution, the list of vectors is linearly independent.&lt;/li&gt;
+      &lt;li&gt;If this equation has a nontrivial solution, the list of vectors is linearly dependent.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The list of vectors is linearly dependent if there exist some scalas &lt;script type=&quot;math/tex&quot;&gt;c_1, ... , c_p&lt;/script&gt; not all zero, such that&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;c_1\vec v_1 + c_2\vec v_2 + ... + c_p\vec v_p = \vec 0&lt;/script&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;This is called a linear dependence relation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;solving-problems-about-linear-dependenceindependence&quot;&gt;Solving problems about linear dependence/independence&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;So if you’re given a list of vectors
+&lt;script type=&quot;math/tex&quot;&gt;\vec v_1, \vec v_2, ... , \vec v_p&lt;/script&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;and you want to know if they’re linearly dependent or independent,&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Form the matrix &lt;script type=&quot;math/tex&quot;&gt;A  =&lt;/script&gt; [ &lt;script type=&quot;math/tex&quot;&gt;\vec v_1&lt;/script&gt; &lt;script type=&quot;math/tex&quot;&gt;\vec v_2&lt;/script&gt; … &lt;script type=&quot;math/tex&quot;&gt;\vec v_p&lt;/script&gt; ]&lt;/li&gt;
+  &lt;li&gt;Row reduce [ &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt; | &lt;script type=&quot;math/tex&quot;&gt;\vec 0&lt;/script&gt; ]
+    &lt;ul&gt;
+      &lt;li&gt;If there are free variables, -&amp;gt; nontrivial sol. -&amp;gt; the vectors ar dependent&lt;/li&gt;
+      &lt;li&gt;If there are no free variables, -&amp;gt; trivial sol. -&amp;gt; the vectors are independent.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;linear-independence-of-a-two-vector-set&quot;&gt;Linear independence of a two vector set&lt;/h3&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;x_1 \vec v_1 + x_2 \vec v_2 = \vec 0&lt;/script&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Two vectors is linearly dependent iff at liseas one of the vectors is a multiple of the other.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;characterization-of-linearly-independent-sets&quot;&gt;Characterization of linearly independent sets&lt;/h2&gt;
+&lt;h3 id=&quot;theorem-3&quot;&gt;Theorem&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;A list &lt;script type=&quot;math/tex&quot;&gt;\vec v_1, \vec v_2, ... \vec v_p&lt;/script&gt; of two or more vectors is linearly dependent iff at least one of the vectors in the list is a linear combination of the others.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;theorem--p--n&quot;&gt;Theorem : &lt;script type=&quot;math/tex&quot;&gt;p &gt; n&lt;/script&gt;&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;If &lt;script type=&quot;math/tex&quot;&gt;\vec v_1, \vec v_2, ... , \vec v_p&lt;/script&gt; is a liest of vectors in &lt;script type=&quot;math/tex&quot;&gt;R^n&lt;/script&gt;, and &lt;script type=&quot;math/tex&quot;&gt;p &gt; n&lt;/script&gt; then the set is linearly dependent.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;zero-vector&quot;&gt;Zero Vector&lt;/h2&gt;
+&lt;h3 id=&quot;theorem-4&quot;&gt;Theorem&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;If a list of vectors contains the zero vector, the vectors are linearly dependent.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Sat, 15 Apr 2017 00:00:00 +0900</pubDate>
