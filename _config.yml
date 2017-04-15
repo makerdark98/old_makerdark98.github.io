@@ -10,7 +10,7 @@ baseurl: "" # apply repo name if use it under gh-pages branch
 
 google_analytics: None
 repo: http://github.com/makerdark98/makerdark98.github.io
-disqus_shortname: makerdark98
+disqus_shortname: md98blog
 twitter_username: "makerdark98"
 comments: true
 
