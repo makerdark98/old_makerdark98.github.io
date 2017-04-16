@@ -15,6 +15,7 @@ tags :
 
 ### Definition
 - A transformation $$ T $$ from $$ R^n $$ to $$ R^m $$ is a rul that assigns to each vector $$ \vec x $$ in $$ R^n $$ a vector $$ T(x) in R^m $$.
+
 ### Terminology
 
 $$ R^n $$ : domatin of $$ T $$ , $$ R^m $$ : codomain of $$ T $$

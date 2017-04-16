@@ -127,7 +127,7 @@ $$ \vec v_1, \vec v_2, ... , \vec v_p $$
 
 and you want to know if they're linearly dependent or independent,
   - Form the matrix $$ A  = $$ [ $$ \vec v_1 $$ $$ \vec v_2 $$ ... $$\vec v_p $$ ] 
-  - Row reduce [ $$ A $$ \| $$ \vec 0 $$ ] 
+  - Row reduce [ $$ A $$ | $$ \vec 0 $$ ] 
     - If there are free variables, -> nontrivial sol. -> the vectors ar dependent
     - If there are no free variables, -> trivial sol. -> the vectors are independent.
 
