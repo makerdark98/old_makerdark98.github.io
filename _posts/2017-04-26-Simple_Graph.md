@@ -13,7 +13,7 @@ tags :
 
 ### Code
 
-{% highlight python linenos %}
+{% highlight python%}
 import numpy as np
 import matplotlib.pyplot as plt
 x = np.arange(0, 6, 0.1);
