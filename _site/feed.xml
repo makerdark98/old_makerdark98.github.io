@@ -5,9 +5,137 @@
     <description>공부 정리</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 15 Apr 2017 23:19:20 +0900</pubDate>
-    <lastBuildDate>Sat, 15 Apr 2017 23:19:20 +0900</lastBuildDate>
+    <pubDate>Wed, 26 Apr 2017 03:02:34 +0900</pubDate>
+    <lastBuildDate>Wed, 26 Apr 2017 03:02:34 +0900</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>Matplotlib-Simple_Graph</title>
+        <description>&lt;h3 id=&quot;code&quot;&gt;Code&lt;/h3&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;np&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;plt&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/2017-04-26/Simple_Graph.png&quot; alt=&quot;실행 스크린샷&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://localhost:4000/assets/file/2017-04-26/Simple_Graph.ipynb&quot;&gt;ipython 파일&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;공식 문서 링크 : &lt;a href=&quot;http://matplotlib.org/2.0.0/api/pyplot_api.html&quot;&gt;matplotlib.pyplot&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 26 Apr 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2017/Simple_Graph/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/Simple_Graph/</guid>
+        
+        <category>Matplotlib</category>
+        
+        <category>Python</category>
+        
+        <category>iPython</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Physics#2</title>
+        <description>&lt;h1 id=&quot;2-motion-in-one-dimension&quot;&gt;2. Motion in one dimension&lt;/h1&gt;
+
+&lt;p&gt;Particle Model : 질량 O, 크기 X, 위치 O&lt;/p&gt;
+
+&lt;h2 id=&quot;21-position-velocity-and-speed&quot;&gt;2.1. Position, Velocity and Speed&lt;/h2&gt;
+
+&lt;p&gt;Displacement &lt;script type=&quot;math/tex&quot;&gt;\Delta \vec x = \vec x_f - \vec x_i&lt;/script&gt; (vector)&lt;/p&gt;
+
+&lt;p&gt;Average Velocity &lt;script type=&quot;math/tex&quot;&gt;v_{x, avg} = \frac{x_f - x_i}{t_f - t_i} = \frac{\Delta x}{\Delta t}&lt;/script&gt; (vector)&lt;/p&gt;
+
+&lt;p&gt;Average Speed &lt;script type=&quot;math/tex&quot;&gt;V_{avg} = \frac{d}{\Delta t}&lt;/script&gt; (scala) &lt;script type=&quot;math/tex&quot;&gt;\geq 0&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;22-instantaneous-velocity-and-speed&quot;&gt;2.2 Instantaneous velocity and speed&lt;/h2&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;v_x = \lim_{\Delta t \to 0}\frac{\Delta x}{\Delta t} = \frac {dx}{dt}&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;23-analysis-model--v_x--const&quot;&gt;2.3 Analysis model : &lt;script type=&quot;math/tex&quot;&gt;v_x = const&lt;/script&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;x_f = x_i + v_xt&lt;/script&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\frac{\Delta x}{t}t  = v_xt&lt;/script&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\frac{d}{dt}x=v_x&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;24-acceleration&quot;&gt;2.4 Acceleration&lt;/h2&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\vec a_{x,avg} = \vec a_x = \frac{\Delta \vec v_x}{\Delta t}&lt;/script&gt; (Vector)&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\vec a_x =  \frac{d \vec v_x}{dt} = \frac {d}{dt}(\frac{d}{dt}\vec x) = \frac{d^2 \vec x}{dt^2}&lt;/script&gt; &lt;script type=&quot;math/tex&quot;&gt;(\frac{L}{T^2})&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;25-analysis-model--vec-a_x--const&quot;&gt;2.5 Analysis model : &lt;script type=&quot;math/tex&quot;&gt;\vec a_x = const&lt;/script&gt;&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec v_{x,avg} = \frac{v_{xi}+v_{xf}}{2}&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec x_f - \vec x_i = \vec v_{x,avg} t&lt;/script&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec x_f = \vec x_i + \frac{1}{2}(\vec  v_{xi} + \vec v_{xf})t&lt;/script&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;= \vec x_i+\frac{1}{2}(\vec x_{xi} + \vec v_i + \vec a_x t)t&lt;/script&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;= \vec x_i + \vec v_{xi}t+\frac {1}{2}\vec a_xt^2&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec x_f = \vec x_i + \frac{1}{2}(\vec v_{xi} + v_{xf} )t&lt;/script&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;= \vec x_i + \frac{1}{2}(\vec v_{xi} + \vec v_{xf}) \frac{\vec v_{xf} - \vec v_{xi}}{\vec a_x}&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec x_f - \vec x_i = \frac{\vec v_{xf}^2-\vec v_{xi}^2}{2\vec a_x}&lt;/script&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;26-free-falling-object&quot;&gt;2.6 Free falling object&lt;/h2&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\vec g = const = 9.8 m/s^2&lt;/script&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 16 Apr 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2017/Physics-2/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/Physics-2/</guid>
+        
+        <category>physics</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Physics#1</title>
+        <description>&lt;h1 id=&quot;1physics-and-measurement&quot;&gt;1.Physics and Measurement&lt;/h1&gt;
+&lt;h2 id=&quot;11-si-unit&quot;&gt;1.1 S.I Unit&lt;/h2&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;1m \approx \frac {c}  {3.0 \times 10^8}&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;12-demension-analysis&quot;&gt;1.2 Demension analysis&lt;/h2&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;x = vt = \frac{1}{2} at^2&lt;/script&gt;
+&lt;script type=&quot;math/tex&quot;&gt;L = \frac{L}{T} T = \frac{L} {T^2} T^2&lt;/script&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\Delta t = \frac{2d}{c\sqrt{1-\frac{v^2}{c^2}}}&lt;/script&gt;
+&lt;script type=&quot;math/tex&quot;&gt;T = \frac{T}{L}L&lt;/script&gt;
+&lt;script type=&quot;math/tex&quot;&gt;a \propto r^n v^m&lt;/script&gt;
+&lt;script type=&quot;math/tex&quot;&gt;m = 2, n = -1&lt;/script&gt;
+&lt;script type=&quot;math/tex&quot;&gt;y = 2mcos(kx)&lt;/script&gt; &lt;script type=&quot;math/tex&quot;&gt;if k = \frac{1}{2m}&lt;/script&gt;
+&lt;script type=&quot;math/tex&quot;&gt;L = L cos(L\frac{1}{L})&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;14-어림잡아&quot;&gt;1.4 어림잡아&lt;/h2&gt;
+&lt;h2 id=&quot;15-유효숫자&quot;&gt;1.5 유효숫자&lt;/h2&gt;
+&lt;p&gt;round off number(반올림수)&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 16 Apr 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2017/Physics-1/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/Physics-1/</guid>
+        
+        <category>physics</category>
+        
+        
+      </item>
     
       <item>
         <title>Linear Algebra#2</title>
@@ -19,10 +147,10 @@
 
 &lt;h3 id=&quot;definition&quot;&gt;Definition&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;A transformation &lt;script type=&quot;math/tex&quot;&gt;T&lt;/script&gt; from &lt;script type=&quot;math/tex&quot;&gt;R^n&lt;/script&gt; to &lt;script type=&quot;math/tex&quot;&gt;R^m&lt;/script&gt; is a rul that assigns to each vector &lt;script type=&quot;math/tex&quot;&gt;\vec x&lt;/script&gt; in &lt;script type=&quot;math/tex&quot;&gt;R^n&lt;/script&gt; a vector &lt;script type=&quot;math/tex&quot;&gt;T(x) in R^m&lt;/script&gt;.
-    &lt;h3 id=&quot;terminology&quot;&gt;Terminology&lt;/h3&gt;
-  &lt;/li&gt;
+  &lt;li&gt;A transformation &lt;script type=&quot;math/tex&quot;&gt;T&lt;/script&gt; from &lt;script type=&quot;math/tex&quot;&gt;R^n&lt;/script&gt; to &lt;script type=&quot;math/tex&quot;&gt;R^m&lt;/script&gt; is a rul that assigns to each vector &lt;script type=&quot;math/tex&quot;&gt;\vec x&lt;/script&gt; in &lt;script type=&quot;math/tex&quot;&gt;R^n&lt;/script&gt; a vector &lt;script type=&quot;math/tex&quot;&gt;T(x) in R^m&lt;/script&gt;.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h3 id=&quot;terminology&quot;&gt;Terminology&lt;/h3&gt;
 
 &lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;R^n&lt;/script&gt; : domatin of &lt;script type=&quot;math/tex&quot;&gt;T&lt;/script&gt; , &lt;script type=&quot;math/tex&quot;&gt;R^m&lt;/script&gt; : codomain of &lt;script type=&quot;math/tex&quot;&gt;T&lt;/script&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -246,7 +374,15 @@ where &lt;script type=&quot;math/tex&quot;&gt;\vec v_h&lt;/script&gt; is any sol
 &lt;p&gt;and you want to know if they’re linearly dependent or independent,&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Form the matrix &lt;script type=&quot;math/tex&quot;&gt;A  =&lt;/script&gt; [ &lt;script type=&quot;math/tex&quot;&gt;\vec v_1&lt;/script&gt; &lt;script type=&quot;math/tex&quot;&gt;\vec v_2&lt;/script&gt; … &lt;script type=&quot;math/tex&quot;&gt;\vec v_p&lt;/script&gt; ]&lt;/li&gt;
-  &lt;li&gt;Row reduce [ &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt; | &lt;script type=&quot;math/tex&quot;&gt;\vec 0&lt;/script&gt; ]
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Row reduce [ &lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;script type=&quot;math/tex&quot;&gt;\vec 0&lt;/script&gt; ]&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
     &lt;ul&gt;
       &lt;li&gt;If there are free variables, -&amp;gt; nontrivial sol. -&amp;gt; the vectors ar dependent&lt;/li&gt;
       &lt;li&gt;If there are no free variables, -&amp;gt; trivial sol. -&amp;gt; the vectors are independent.&lt;/li&gt;

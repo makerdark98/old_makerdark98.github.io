@@ -8,7 +8,7 @@ url: http://makerdark98.github.io/ # site url
 baseurl: "" # apply repo name if use it under gh-pages branch
 # baseurl: null # apply null if repo name is something like username.github.io
 
-google_analytics: None
+google_analytics: "makerdark98"
 repo: http://github.com/makerdark98/makerdark98.github.io
 disqus_shortname: md98blog
 twitter_username: "makerdark98"
@@ -17,7 +17,8 @@ comments: true
 # Build settings
 permalink   : /:year/:title/
 markdown    : kramdown
-highlighter : rouge
+highlighter : rouge 
+
 
 source: ./
 destination: ./_site
